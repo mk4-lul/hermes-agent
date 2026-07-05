@@ -16,6 +16,7 @@ __pycache__/
 .claude/
 
 LOCAL.md
+RAILWAY.md
 overview.md
 ref_only/
 ref_ui_only/

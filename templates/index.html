@@ -1711,6 +1711,8 @@ function app() {
         window.__hermesAuthFetchInstalled = true;
       }
       await Promise.all([this.loadConfig(), this.loadStatus(), this.loadLogs(), this.loadPairing()]);
+      this.setupMode = this.isSetupDone ? 'summary' : 'initial';
+      this.wizardStep = 1;
       setInterval(() => this.loadStatus(),  5000);
       setInterval(() => this.loadLogs(),    3000);
       setInterval(() => this.loadPairing(), 5000);
