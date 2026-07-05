@@ -621,8 +621,8 @@
 
     <div class="nav-group-label" style="margin-top:8px">Manage</div>
     <div class="nav-item"
-         :class="{active: page==='users', locked: !isSetupDone}"
-         @click="isSetupDone && (page='users')">
+         :class="{active: page==='users'}"
+         @click="page='users'">
       <span class="nav-icon">◈</span>
       <span>Users</span>
       <span class="nav-badge" :class="{visible: pendingCount>0}" x-text="pendingCount"></span>
